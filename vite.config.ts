@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === "development" ? "/" : "/E-waste/", // caminho do repositório no GitHub Pages
   server: {
     host: "::",
     port: 8080,
